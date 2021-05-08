@@ -1,0 +1,32 @@
+.instagram {
+  padding-top: 100px;
+  background: #F9F7F7;
+}
+
+.instagram__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.instagram__galery {
+  padding-left: 5px;
+  width: 100vw;
+  padding-bottom: 50px;
+  align-content: stretch;
+  justify-items: stretch;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.instagram__galery > div {
+  width: auto;
+  height: auto;
+}
+
+.instagram__galery > div > img {
+  height: 100%;    
+  width: 100%;    
+  object-fit: cover;
+}

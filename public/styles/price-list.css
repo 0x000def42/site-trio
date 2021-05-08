@@ -1,0 +1,44 @@
+.price-list {
+  display: none;
+  padding: 0 20px;
+}
+
+.price-list--visible {
+  display: flex;
+}
+
+.price-list__column {
+  flex: 1;
+  padding: 0 50px;
+}
+
+.price-list__element {
+  padding: 10px 0px;
+}
+
+.price-list__element-sup {
+  font-size: 18px;
+}
+
+.price-list__element-main{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.price-list__position {
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.price-list__cost {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 135%;
+}

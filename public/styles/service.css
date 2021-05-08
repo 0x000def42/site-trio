@@ -1,0 +1,28 @@
+.service {
+  padding-top: 50px;
+}
+
+.service__title {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.service__content {
+  margin: 0px 0px;
+  padding-top: 30px;
+}
+
+.service__content-part {
+  
+}
+
+.service__tabs {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.service__tab{
+  margin: 0px 20px;
+  flex: 1;
+}

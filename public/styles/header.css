@@ -1,0 +1,17 @@
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-container {
+  padding-left: 60px;
+}
+
+.header__logo{
+  height: 175px;
+}
+
+.header__navigation {
+  width: 1000px;
+}

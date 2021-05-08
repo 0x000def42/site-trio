@@ -1,0 +1,29 @@
+.navigation {
+  height: auto;
+  margin: auto;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__element {
+  padding: 15px;
+}
+
+.navigation__element--active {
+  border: 1px solid #D1A954;
+  padding: 14px;
+}
+
+.navigation__link {
+  color: #000;
+}
+
+.navigation__element--active 
+> .navigation__link {
+  color: #D1A954;
+}

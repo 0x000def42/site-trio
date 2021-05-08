@@ -1,0 +1,58 @@
+.service-card {
+  height: auto;
+  background-size: cover;    
+  background-repeat: no-repeat;     
+  height: 0;     
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.service-card--active .service-card__info-container  {
+  background: rgba(218, 186, 161, .9);
+}
+
+.service-card--cosmetology{
+  background-image: url('/public/img/cosmetolog.jpg');
+}
+
+.service-card--nails {
+  background-image: url('/public/img/manicure.jpeg');
+}
+
+.service-card--massage {
+  background-image: url('/public/img/massage.jpg');
+}
+
+.service-card__info {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.service-card__info-container {
+  padding: 15px;
+  background-color: rgba(209, 169, 84, 0.9);
+  position: absolute;
+  bottom: 0;
+}
+
+.service-card__title {
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.service-card__description {
+  font-size: 14px;
+  line-height: 135%;
+  text-align: center;
+  color: #FFFFFF;
+}

@@ -1,0 +1,50 @@
+.works {
+  padding-top: 80px;
+  width: 1000px;
+  height: 1000px;
+  overflow: hidden;
+  display: grid;
+  align-content: stretch;
+  justify-items: stretch;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  margin: auto;
+  grid-gap: 20px;
+  grid-template-areas: "a a b b b b c c c"  
+                       "a a b b b b c c c"
+                       "a a b b b b c c c"  
+                       "d d d d d e e e e"  
+                       "d d d d d e e e e"  
+                       "d d d d d e e e e"  
+                       "d d d d d f f f f"  
+                       "d d d d d f f f f"  
+                       "d d d d d f f f f";
+}
+
+.works__meta {
+  box-sizing: border-box;
+}
+
+.works__meta-title {
+  font-size: 24px;
+  line-height: 135%;
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.works__meta-img {
+  
+}
+
+.works__grid-cell{
+  width: auto;
+  height: auto;
+}
+
+.works__grid-cell > img{
+  height: 100%;    
+  width: 100%;    
+  object-fit: cover;
+}
