@@ -6,10 +6,12 @@
 
 .header__logo-container {
   padding-left: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header__logo{
-  height: 175px;
+  height: 125px;
 }
 
 .header__navigation {
