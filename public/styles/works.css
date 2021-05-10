@@ -10,6 +10,7 @@
   grid-template-rows: repeat(9, 1fr);
   margin: auto;
   grid-gap: 20px;
+  /* Сетка задается шаблоном, буква - соответствует значение стиля картинки в html */
   grid-template-areas: "a a b b b b c c c"  
                        "a a b b b b c c c"
                        "a a b b b b c c c"  
@@ -51,21 +52,24 @@
 }
 
 .works__gallery-image--selected {
+  /* Выбранную картинку нужно фиксировано спозиционировать по центру экрана */
   position: fixed;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  padding: 50px;
+  top: 50%; /* Отступ сверху - 50% высоты окна */
+  left: 50%; /* Отступ слева - 50% ширины экрана */
+  transform: translate(-50%, -50%); /* Далее нужно отступить в обратну сторону на половину ширины и высоты самого блока */
+  padding: 50px; /* Отступы вокруг картинки (что б не на весь экран) */
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 2; /* И выводим её на передний план, чтоб затемненный фон не перекрывал */
 }
 
 .works__gallery-image--selected > img {
-  object-fit: contain !important;
+  object-fit: contain !important; /* У выбранной картинки переопределяем стратегию заполнения 
+  картинкой блока, !important задает максимальный приоритет */
 }
 
 .works__gallery-image--selected:after{
-  content: 'x';
+  /* Крестик реализован через псевдоэлемент after */
+  content: 'x'; /* Сам крестик */
   font-size: 35px;
   font-weight: 500;
   border: 2px solid white;
@@ -81,19 +85,19 @@
   display: block;
   position: fixed;
   /* right: 0; */
-  right: 20px;
+  right: 20px; /* Отображаем в правом верхнем углу страницы с небольшим отступом*/
   top: 20px;
   color: white;
 }
 
-.works__gallery-image--selected:before {
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  top: 0;
+.works__gallery-image--selected:before { /* Это полупрозрачный затемняющий фон, который видно только у активной картинки*/
+  content: ""; /* Без свойства content элемент не отобразится*/
+  width: 100vw; /* Полная ширина окна */
+  height: 100vh; /* Полная высотка окна */
+  top: 0; /* Без отступов */
   left: 0;
   background-color: rgba(0,0,0,.7);
-  z-index: -1;
+  z-index: -1; /* Отправляем на задний план */
   position: fixed;
 }
 

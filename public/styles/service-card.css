@@ -14,15 +14,15 @@
 }
 
 .service-card--cosmetology{
-  background-image: url('/public/img/cosmetolog.jpg');
+  background-image: url('../img/cosmetolog.jpg');
 }
 
 .service-card--nails {
-  background-image: url('/public/img/manicure.jpeg');
+  background-image: url('../img/manicure.jpeg');
 }
 
 .service-card--massage {
-  background-image: url('/public/img/massage.jpg');
+  background-image: url('../img/massage.jpg');
 }
 
 .service-card__info {

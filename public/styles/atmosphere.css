@@ -3,21 +3,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: relative; /* Нужно для того, что бы дочерние элементы (и :before тоже), 
+  в случае абсолютного позиционирования ориентировались относительно родительского элемента */
   overflow: hidden;
   padding-bottom: 20px;
 }
 
-.atmosphere:before{
+/* У секции атмосферы на заднем поане есть фон, смещенный относительно контента на 350px вниз, 
+это сделано с помощью псевдоэлемента :before*/
+.atmosphere:before{ 
   background-color: #F9F7F7;
-  position: absolute;
-  top: 0;
+  position: absolute; /* Позиционируем отностельно */
+  top: 0; /* Отступ сверху - 0*/
   height: 100%;
-  margin-top: 350px;
+  margin-top: 350px; /* А вот и отступ в 350 px*/
   width: 100%;
   box-sizing: border-box;
   content: "";
-  z-index: -1;
+  z-index: -1; /* Отправляем псевдоэлемент на задние план потока отображения, что бы он ничего не перекрывал*/
 }
 
 .atmosphere__title {
